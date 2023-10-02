@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+
+body{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    min-height:200vh;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.background{
+    background: #504AB5;
+    min-height:200vh;
+}
+
+a{
+    text-decoration: none;
+}

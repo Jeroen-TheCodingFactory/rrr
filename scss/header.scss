@@ -1,0 +1,153 @@
+.headerWrapper{
+    width:100%;
+    background:#504AB5;
+    height: 15vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+
+.navUl{
+    display:flex;
+    gap: 20px;
+}
+
+.navLi{
+    list-style:none;
+
+    a{
+        color:white
+    }
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.icon{
+    font-size: 70px;
+    height: 100px;
+    width:100px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+}
+
+.hero{
+    height:85vh;
+    background:linear-gradient(to right, rgba(80, 74, 181, 0.4), 60%, rgba(181, 80, 74,0.4), 90%, rgba(74, 181, 80,0.4)), url("/img/hero.jpg");
+    background-position: top center;
+    background-size: cover;
+    position:relative;
+}
+
+.logoText{
+    font-weight: 400;
+}
+
+.title{
+    position:absolute;
+    top:40%;
+    left:10%;
+    font-size:300%;
+    font-weight:600;
+}
+
+.cta{
+    top:55%;
+    left:10%;
+    position:absolute;
+    background:#4AB550;
+    border:none;
+    font-size: 100%;
+    font-family: 'Open sans', sans-serif;
+    border-radius: 5px;
+    padding:20px 40px;
+    color:white;
+    border-bottom: 5px solid darken(#4AB550, 10%);
+    transition: 0.2s all;
+    width:200px;
+}
+
+.cta:hover, .cta--section:hover{
+    cursor:pointer;
+}
+
+.cta:active, .cta--section:active{
+    background:darken(#4AB550, 10%);
+    border-bottom: 5px solid transparant;
+    transform: translateY(2px);
+}
+
+.cta--section{
+    background:#4AB550;
+    border:none;
+    font-size: 100%;
+    font-family: 'Open sans', sans-serif;
+    border-radius: 5px;
+    padding:20px 40px;
+    color:white;
+    border-bottom: 5px solid darken(#4AB550, 10%);
+    transition: 0.2s all;
+    width:200px;
+}
+
+
+@media screen and (max-width: 1000px){
+    body{
+        padding:0;
+    }
+    .navUl{
+        display:none;
+    }
+    .hero{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:10%;
+        gap:20px;
+        background:linear-gradient(to right, rgba(80, 74, 181, 0.5), rgba(80,74,181,0.5)),url("/img/hero.jpg");
+        background-position: top center;
+        background-size: cover;
+    }
+    .title{
+        position: relative;
+        font-size: 200%;
+        top:auto;
+        left:0;
+    }
+    .cta{
+        width:150px;
+        height:50px;
+        font-size: 70%;
+        padding:0;
+        position: relative;
+        top:auto;
+        left:auto;
+    }
+}
+
+.waarom-wij-over-ons{
+    display:flex;
+    color: black;
+}
+
+.waarom-wij-text{
+ height:500px;
+ width:50%;
+}
+
+.waarom-wij-afbeelding{
+    height:500px;
+    width:50%;
+}
+
+.waarom-wij-afbeelding img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
