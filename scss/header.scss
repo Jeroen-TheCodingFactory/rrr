@@ -43,6 +43,11 @@
     background-position: top center;
     background-size: cover;
     position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
 }
 
 .logoText{
@@ -50,17 +55,16 @@
 }
 
 .title{
-    position:absolute;
-    top:40%;
-    left:10%;
-    font-size:300%;
+    font-size:400%;
     font-weight:600;
 }
 
+.heading2{
+    font-weight:400;
+    font-size: 300%;
+}
+
 .cta{
-    top:55%;
-    left:10%;
-    position:absolute;
     background:#4AB550;
     border:none;
     font-size: 100%;
@@ -73,33 +77,21 @@
     width:200px;
 }
 
-.cta:hover, .cta--section:hover{
+.cta:hover{
     cursor:pointer;
 }
 
-.cta:active, .cta--section:active{
+.cta:active{
     background:darken(#4AB550, 10%);
     border-bottom: 5px solid transparant;
     transform: translateY(2px);
-}
-
-.cta--section{
-    background:#4AB550;
-    border:none;
-    font-size: 100%;
-    font-family: 'Open sans', sans-serif;
-    border-radius: 5px;
-    padding:20px 40px;
-    color:white;
-    border-bottom: 5px solid darken(#4AB550, 10%);
-    transition: 0.2s all;
-    width:200px;
 }
 
 
 @media screen and (max-width: 1000px){
     body{
         padding:0;
+        font-size: 80%;
     }
     .navUl{
         display:none;
@@ -116,38 +108,10 @@
     }
     .title{
         position: relative;
-        font-size: 200%;
+        font-size: 300%;
         top:auto;
         left:0;
+        text-align:center;
     }
-    .cta{
-        width:150px;
-        height:50px;
-        font-size: 70%;
-        padding:0;
-        position: relative;
-        top:auto;
-        left:auto;
-    }
-}
-
-.waarom-wij-over-ons{
-    display:flex;
-    color: black;
-}
-
-.waarom-wij-text{
- height:500px;
- width:50%;
-}
-
-.waarom-wij-afbeelding{
-    height:500px;
-    width:50%;
-}
-
-.waarom-wij-afbeelding img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+  
 }

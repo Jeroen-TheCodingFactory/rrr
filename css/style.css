@@ -11,11 +11,7 @@ body {
   min-height: 200vh;
   font-size: 16px;
   line-height: 1.55;
-}
-
-.background {
-  background: #504AB5;
-  min-height: 200vh;
+  background: #504ab5;
 }
 
 a {
@@ -67,6 +63,11 @@ a {
   background-position: top center;
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .logoText {
@@ -74,17 +75,16 @@ a {
 }
 
 .title {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-  font-size: 300%;
+  font-size: 400%;
   font-weight: 600;
 }
 
+.heading2 {
+  font-weight: 400;
+  font-size: 300%;
+}
+
 .cta {
-  top: 55%;
-  left: 10%;
-  position: absolute;
   background: #4AB550;
   border: none;
   font-size: 100%;
@@ -97,32 +97,20 @@ a {
   width: 200px;
 }
 
-.cta:hover, .cta--section:hover {
+.cta:hover {
   cursor: pointer;
 }
 
-.cta:active, .cta--section:active {
+.cta:active {
   background: #3b9140;
   border-bottom: 5px solid transparant;
   transform: translateY(2px);
 }
 
-.cta--section {
-  background: #4AB550;
-  border: none;
-  font-size: 100%;
-  font-family: "Open sans", sans-serif;
-  border-radius: 5px;
-  padding: 20px 40px;
-  color: white;
-  border-bottom: 5px solid #3b9140;
-  transition: 0.2s all;
-  width: 200px;
-}
-
 @media screen and (max-width: 1000px) {
   body {
     padding: 0;
+    font-size: 80%;
   }
   .navUl {
     display: none;
@@ -139,28 +127,27 @@ a {
   }
   .title {
     position: relative;
-    font-size: 200%;
+    font-size: 300%;
     top: auto;
     left: 0;
-  }
-  .cta {
-    width: 150px;
-    height: 50px;
-    font-size: 70%;
-    padding: 0;
-    position: relative;
-    top: auto;
-    left: auto;
+    text-align: center;
   }
 }
 .waarom-wij-over-ons {
   display: flex;
   color: black;
+  background: white;
 }
 
 .waarom-wij-text {
   height: 500px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 
 .waarom-wij-afbeelding {
@@ -172,6 +159,75 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.paragraaf {
+  max-width: 65ch;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .heading2 {
+    font-size: 200%;
+  }
+  .waarom-wij-over-ons {
+    flex-direction: column;
+  }
+  .waarom-wij-afbeelding, .waarom-wij-text {
+    width: 100%;
+  }
+}
+.onze-stappen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 1000px;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.stappen {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stap {
+  width: 800px;
+  background: white;
+  list-style: none;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  gap: 10px;
+  height: 300px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stap img {
+  height: 100%;
+  width: 30%;
+  object-position: top;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.stap div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heading3 {
+  font-size: 150%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+
+.waarom-wij-over-ons{
+    display:flex;
+    color: black;
+    background:white;
+}
+
+.waarom-wij-text{
+ height:500px;
+ width:50%;
+ display:flex;
+ flex-direction: column;
+ gap:20px;
+ align-items: center;
+ justify-content: center;
+ text-align:left;
+}
+
+.waarom-wij-afbeelding{
+    height:500px;
+    width:50%;
+}
+
+.waarom-wij-afbeelding img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.paragraaf{
+    max-width:65ch;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .heading2{
+        font-size:200%;
+    }
+    .waarom-wij-over-ons{
+        flex-direction: column;
+    }
+    .waarom-wij-afbeelding, .waarom-wij-text{
+        width:100%;
+    }
+}

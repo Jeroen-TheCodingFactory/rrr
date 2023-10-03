@@ -1,0 +1,51 @@
+.onze-stappen{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    min-height:1000px;
+    gap:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.stappen{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.stap{
+    width:800px;
+    background:white;
+    list-style:none;
+    border-radius: 5px;
+    color:black;
+    display:flex;
+    gap:10px;
+    height:300px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+.stap img{
+    height:100%;
+    width:30%;
+    object-position: top;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.stap div{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+
+.heading3{
+    font-size:150%;
+}
