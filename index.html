@@ -23,11 +23,11 @@
             </figure>
             <nav class="nav">
                 <ul class="navUl">
-                    <li class="navLi"><a href="">Onze Stappen</a></li>
-                    <li class="navLi"><a href="">Abbonementen</a></li>
-                    <li class="navLi"><a href="">Impact</a></li>
-                    <li class="navLi"><a href="">Reviews</a></li>
-                    <li class="navLi"><a href="">Contact</a></li>
+                    <li class="navLi"><a href="#onze">Onze Stappen</a></li>
+                    <li class="navLi"><a href="#abbo">Abbonementen</a></li>
+                    <li class="navLi"><a href="#">Impact</a></li>
+                    <li class="navLi"><a href="#reviews">Reviews</a></li>
+                    <li class="navLi"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,7 +53,7 @@
                 alt="Een afbeelding van verschillende tassen en schoenen, netjes opgesteld">
         </figure>
     </section>
-    <section class="onze-stappen">
+    <section class="onze-stappen" id="onze">
         <h2 class="heading2">Onze stappen</h2>
         <ul class="stappen">
             <li class="stap">
@@ -95,7 +95,7 @@
 
         </ul>
     </section>
-    <section class="abbonementen-sectie">
+    <section id="abbo" class="abbonementen-sectie">
         <h2 class="heading2 headingBlack">Abbonementen</h2>
         <ul class="abbonementen">
             <li class="abbonement">
@@ -136,7 +136,7 @@
             </li>
         </ul>
     </section>
-    <section class="review-sectie">
+    <section class="review-sectie" id="reviews">
         <h2 class="heading2">Reviews</h2>
         <ul class="reviews">
             <li class="review">
@@ -169,6 +169,36 @@
             </li>
         </ul>
     </section>
+    <section class="contact-sectie" id="contact">
+        <h2 class="heading2">Contact</h2>
+        <form class="contact">
+            <div>
+            <label for="email">Email</label>
+            <input id="email" type="text">
+        </div>
+        <div>
+            <label for="vraag">Vraag of opmerking</label>
+            <textarea  id="vraag" rows="5"></textarea>
+        </div>
+            <input class="cta" type="submit" value="Verzend">
+        </form>
+    </section>
+    <footer class="footer">
+        <figure class="logo">
+            <i class="icon fa-brands fa-pagelines"></i>
+            <h2 class="logoText">RenewRackRunway</h2>
+        </figure>
+        <p>KvK: 123456789</p>
+        <nav class="nav">
+            <ul class="navUl">
+                <li class="navLi"><a href="">Onze Stappen</a></li>
+                <li class="navLi"><a href="">Abbonementen</a></li>
+                <li class="navLi"><a href="">Impact</a></li>
+                <li class="navLi"><a href="">Reviews</a></li>
+                <li class="navLi"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>

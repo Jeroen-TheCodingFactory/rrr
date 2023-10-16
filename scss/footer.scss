@@ -1,0 +1,16 @@
+.footer{
+    background:black;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap:wrap
+}
+
+
+.footer p {
+    
+}
+.footer .logo{
+    transform: scale(0.8);
+    padding:0;
+}

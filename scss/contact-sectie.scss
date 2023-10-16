@@ -1,0 +1,48 @@
+.contact-sectie{
+    background:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:black;
+    min-height: 1000px;
+}
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    width:800px;
+    gap:20px;
+}
+
+.contact div{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact input:not(.cta), .contact textarea{
+    font-family: 'Open Sans', sans-serif;
+    font-size:100%;
+    padding:2rem;
+    border:none;
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2);
+    border-radius:5px;
+    resize: none;
+}
+
+.contact input:focus, .contact textarea:focus{
+    outline:2px solid #504ab5;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-sectie{
+        justify-content:flex-start;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .contact{
+        width:100%;
+        padding:20px;
+    }
+}
